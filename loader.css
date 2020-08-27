@@ -1,0 +1,93 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   background-color: white;
+}
+.afterload{
+   opacity :0;
+}
+.loader {
+   height: 100vh;
+   display: flex;
+  stroke-dashoffset:1000;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: white;
+   transition: opacity 1s;
+   position: fixed;
+   z-index: 5;
+   width: 100%;
+   pointer-events: none;
+   overflow: hidden;
+}
+
+div.circles {
+    position: relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 54px;
+    top: 7px;
+  left: 6px
+}
+
+div.circle1 {
+   width: 6px;
+   height: 6px;
+   background-color: #F47B27;
+   margin: 4px;
+   border-style:solid;
+   border-color: #F47B27;
+   border-width: 2px;
+   border-radius: 50%;
+   
+}
+
+#logo
+{
+	width:50px;
+	height:50px;
+	margin-bottom: 25px;
+  transform-origin :center;   
+}
+#logo path
+{
+   transform-origin :center;
+   
+}
+
+#small
+{
+   width: 70px;
+   height: 70px;
+}
+
+#svg
+{
+  overflow: visible;
+}
+
+.cid-s7CJva1tdF .navbar
+{
+  display: none;
+}
+
+#corcontrol{
+    display: none;
+}
+#maincontainer
+{
+  transition: 2s;
+  opacity: 0;
+}
+
+
+.saavu
+{
+  height: 100vh;
+  overflow: hidden;
+  /*display: none;*/
+
+}
