@@ -1,18 +1,23 @@
 var loader =document.querySelector(".loader")
 var na = document.querySelector(".cid-s7CJva1tdF .navbar")
 var corcontrol = document.getElementById("corcontrol");
+var body = document.querySelector("body")
 var maincontainer = document.getElementById("maincontainer")
 var projectcontainer = document.getElementById("projectcontainer")
 var activeprojects  = document.getElementById("activeprojects")
 var backcareer = document.getElementById("back")
 var backbutton = document.querySelector(".back")
+var backcareer1 = document.getElementById("back1")
+var backbutton1 = document.querySelector(".back1")
 var projects = document.querySelectorAll(".projects");
 var projectimage = document.querySelectorAll(".projectimage");
 var projecttitle = document.querySelectorAll(".projecttitle");
 var projectsexpand = document.querySelectorAll(".projectsexpand")
+var totalprojects = document.getElementById("totalprojects")
 var projectcontainerexpand = document.getElementById("projectcontainerexpand")
 var backexpand = document.getElementById("backexpand");
 var backbuttonexpand = document.querySelector(".backexpand")
+var secondmain = document.getElementById("secondmain")
 console.log(projects)
 window.addEventListener("load",()=>{
 // loader.style.display = "flex";
@@ -98,204 +103,327 @@ animate1.add({
 
 
 //projects
-activeprojects.addEventListener("click",animate2)
-console.log(projectcontainer)
-function animate2()
+// activeprojects.addEventListener("click",animate2)
+// console.log(projectcontainer)
+// function animate2()
+// {
+//    // projectcontainer.scrollTop ="100px"
+//   maincontainer.classList.add("saavu2");
+//     projectcontainer.style.display ="flex";
+//     projectcontainer.style.opacity = "1";
+//     na.style.top ="-100%";
+//     anime({
+//     targets :".projects",
+//     scale : ["0","1"],
+//     opacity : ["0","1"],
+//     duration:100,
+//     // easing : "linear",
+//     delay : anime.stagger (100),
+//   })
+//       anime({
+//     targets : "#back path",
+//     strokeDashoffset:[anime.setDashoffset,0],
+//               duration :500,
+//               easing : "linear",
+//           delay: function(el, i) { return i * 250 }
+
+//   })
+// }
+
+// backbutton.addEventListener("click",back)
+// projectcontainer.onclick = function (tar)
+// {
+//   if(tar.target==tar.currentTarget){
+//      projectcontainer.style.opacity = "0"
+//       anime({
+//     targets : "#back path",
+//     strokeDashoffset:[anime.setDashoffset,0],
+//               duration :500,
+//               easing : "linear",
+//               direction :"reverse",
+//           delay: function(el, i) { return i * 250 }
+
+//   })
+
+//   anime({
+//     targets :".projects",
+//     scale : ["1","0"],
+//     opacity : ["1","0"],
+//     duration:100,
+//     // easing : "linear",
+//     delay : anime.stagger (100),
+//   })
+
+//     na.style.top ="0%";
+//   setTimeout(function(){    
+//     projectcontainer.style.display ="none";
+//      maincontainer.classList.remove("saavu2");
+//   },400)
+//   }
+//   else
+//   {
+// for ( var i=0 ; i<projects.length ; i++)
+// {
+//       if (projects[i]==tar.target || projectimage[i]==tar.target || projecttitle[i] == tar.target)
+//       {
+//         // projectcontainer.style.opacity = "0.5"
+//         projectcontainerexpand.style.display = "flex"
+//         projectcontainerexpand.style.opacity = "1"
+//         projectcontainerexpand.style.transform ="scale(1)"
+//         backcareer.style.opacity = "0"
+//         backbutton.style.opacity = "0"
+//         anime({
+//           targets : projectsexpand[i],
+//           translateX :"-50%",
+//           translateY : "-50%",
+//           opacity : 1,
+//           scale : 1,
+//           duration : 50
+//         })
+
+//       }
+//       else
+//       {
+//         anime({
+//           targets : projectsexpand[i],
+//           opacity : 0,
+//           scale : 0,
+//           translateX :"-50%",
+//           translateY : "-50%",
+//           duration : 50
+//         }) 
+//       }
+// }
+//   }
+// }
+
+// function back ()
+// {
+ 
+//     projectcontainer.style.opacity = "0"
+//       anime({
+//     targets : "#back path",
+//     strokeDashoffset:[anime.setDashoffset,0],
+//               duration :500,
+//               easing : "linear",
+//               direction :"reverse",
+//           delay: function(el, i) { return i * 250 }
+
+//   })
+//   anime({
+//     targets :".projects",
+//     scale : ["1","0"],
+//     opacity : ["1","0"],
+//     duration:100,
+//     // easing : "linear",
+//     delay : anime.stagger (100),
+//   })
+// na.style.top ="0%";
+//   setTimeout(function(){    
+//     projectcontainer.style.display ="none";
+//      maincontainer.classList.remove("saavu2");
+//   },1000)
+
+// }
+// projectcontainer.onmouseover=function (tar){
+// for ( var i=0 ; i<projects.length ; i++)
+// {
+//   if (tar.target !== tar.currentTarget)
+//     {
+//       if (projects[i]==tar.target || projectimage[i]==tar.target || projecttitle[i] == tar.target)
+//       {
+//         projectimage[i].style.transform ="scale(1.05)"
+//         projecttitle[i].style.transform = "scale(1)"
+//         // projects[i].style.flexGrow ="40"
+//         // projects[i].style.flexShrink ="0"
+//       }
+//     }
+// }
+// }
+
+// projectcontainer.onmouseout=function (tar){
+// for ( var i=0 ; i<projects.length ; i++)
+// {
+//       if (projects[i]==tar.target || projectimage[i]==tar.target || projecttitle[i] == tar.target)
+//       {
+//         projectimage[i].style.transform ="scale(1)"
+//         projecttitle[i].style.transform = "scale(1)"
+//         // projects[i].style.flexGrow ="0"
+//         // projects[i].style.flexShrink ="40"
+//       }
+// }
+// }
+
+
+// backbuttonexpand.addEventListener("click",backexpandfun);
+
+// function backexpandfun ()
+// {
+//   console.log("kdnfnkdnf");
+
+//         anime({
+//           targets : ".projectsexpand",
+//           opacity : 0,
+//           scale : 0,
+//           translateX :"-50%",
+//           translateY : "-50%",
+//           duration : 50
+//         })
+//               setTimeout(function(){
+//                 projectcontainerexpand.style.transform ="scale(0)"
+//         projectcontainerexpand.style.display = "none"
+//         backcareer.style.opacity = "1";
+//         backbutton.style.opacity = "1"
+//         projectcontainerexpand.style.opacity = "0"
+//       },500)
+
+// }
+
+// projectcontainerexpand.onclick=function (tar)
+// {
+//   console.log("fkwhf")
+//   if(tar.target == tar.currentTarget)
+//   {
+
+//       anime({
+//           targets : ".projectsexpand",
+//           opacity : 0,
+//           scale : 0,
+//           translateX :"-50%",
+//           translateY : "-50%",
+//           duration : 50
+//         })
+//       setTimeout(function(){
+//                 projectcontainerexpand.style.transform ="scale(0)"
+//         projectcontainerexpand.style.display = "none"
+//         backcareer.style.opacity = "1";
+//         backbutton.style.opacity = "1"
+//         projectcontainerexpand.style.opacity = "0"
+//       },500)
+//         // projectsexpand.style.zIndex = "1";
+
+//   }
+// }
+activeprojects.addEventListener("click",displayprojects);
+function displayprojects()
 {
-   // projectcontainer.scrollTop ="100px"
-  maincontainer.classList.add("saavu2");
-    projectcontainer.style.display ="flex";
-    projectcontainer.style.opacity = "1";
-    na.style.top ="-100%";
-    anime({
-    targets :".projects",
-    scale : ["0","1"],
+  backbutton.style.display = "flex"
+  projectcontainer.style.display ="flex"
+  // na.style.top = "-100%"
+  body.classList.add("saavu2")
+  secondmain.classList.add("saavu3")
+  anime({
+    targets :"#projectcontainer .projects",
+    scale : ["0.6","1"],
     opacity : ["0","1"],
     duration:100,
     // easing : "linear",
-    delay : anime.stagger (100),
-  })
-      anime({
-    targets : "#back path",
-    strokeDashoffset:[anime.setDashoffset,0],
-              duration :500,
-              easing : "linear",
-          delay: function(el, i) { return i * 250 }
-
-  })
+    // delay : anime.stagger (100),
+   })
 }
 
-backbutton.addEventListener("click",back)
-projectcontainer.onclick = function (tar)
+projectcontainer.onclick = function(tar)
+
 {
-  if(tar.target==tar.currentTarget){
-     projectcontainer.style.opacity = "0"
-      anime({
-    targets : "#back path",
-    strokeDashoffset:[anime.setDashoffset,0],
-              duration :500,
-              easing : "linear",
-              direction :"reverse",
-          delay: function(el, i) { return i * 250 }
-
-  })
-
-  anime({
-    targets :".projects",
-    scale : ["1","0"],
-    opacity : ["1","0"],
-    duration:100,
-    // easing : "linear",
-    delay : anime.stagger (100),
-  })
-
-    na.style.top ="0%";
-  setTimeout(function(){    
-    projectcontainer.style.display ="none";
-     maincontainer.classList.remove("saavu2");
-  },400)
-  }
-  else
+  if (tar.target == tar.currentTarget) 
   {
-for ( var i=0 ; i<projects.length ; i++)
-{
-      if (projects[i]==tar.target || projectimage[i]==tar.target || projecttitle[i] == tar.target)
-      {
-        // projectcontainer.style.opacity = "0.5"
-        projectcontainerexpand.style.display = "flex"
-        projectcontainerexpand.style.opacity = "1"
-        projectcontainerexpand.style.transform ="scale(1)"
-        backcareer.style.opacity = "0"
-        backbutton.style.opacity = "0"
-        anime({
-          targets : projectsexpand[i],
-          translateX :"-50%",
-          translateY : "-50%",
-          opacity : 1,
-          scale : 1,
-          duration : 50
-        })
-
-      }
-      else
-      {
-        anime({
-          targets : projectsexpand[i],
-          opacity : 0,
-          scale : 0,
-          translateX :"50%",
-          translateY : "-50%",
-          duration : 50
-        }) 
-      }
-}
-  }
-}
-
-function back ()
-{
- 
-    projectcontainer.style.opacity = "0"
-      anime({
-    targets : "#back path",
-    strokeDashoffset:[anime.setDashoffset,0],
-              duration :500,
-              easing : "linear",
-              direction :"reverse",
-          delay: function(el, i) { return i * 250 }
-
-  })
   anime({
-    targets :".projects",
-    scale : ["1","0"],
+    targets :"#projectcontainer .projects",
+    scale : ["1","0.6"],
     opacity : ["1","0"],
-    duration:100,
-    // easing : "linear",
-    delay : anime.stagger (100),
-  })
-na.style.top ="0%";
-  setTimeout(function(){    
+    duration:50,
+    // delay : anime.stagger (50),
+   })
+    body.classList.remove("saavu2")
+    secondmain.classList.remove("saavu3")
+  setTimeout(function(){
     projectcontainer.style.display ="none";
-     maincontainer.classList.remove("saavu2");
-  },1000)
-
-}
-projectcontainer.onmouseover=function (tar){
-for ( var i=0 ; i<projects.length ; i++)
-{
-  if (tar.target !== tar.currentTarget)
-    {
-      if (projects[i]==tar.target || projectimage[i]==tar.target || projecttitle[i] == tar.target)
-      {
-        projectimage[i].style.transform ="scale(1.05)"
-        projecttitle[i].style.transform = "scale(1)"
-        // projects[i].style.flexGrow ="40"
-        // projects[i].style.flexShrink ="0"
-      }
-    }
+    na.style.top = "0%"
+    backbutton.style.display = "none"
+  },500)
 }
 }
 
-projectcontainer.onmouseout=function (tar){
-for ( var i=0 ; i<projects.length ; i++)
-{
-      if (projects[i]==tar.target || projectimage[i]==tar.target || projecttitle[i] == tar.target)
-      {
-        projectimage[i].style.transform ="scale(1)"
-        projecttitle[i].style.transform = "scale(1)"
-        // projects[i].style.flexGrow ="0"
-        // projects[i].style.flexShrink ="40"
-      }
-}
-}
+backbutton.addEventListener("click",backnew)
 
-
-backbuttonexpand.addEventListener("click",backexpandfun);
-
-function backexpandfun ()
-{
-  console.log("kdnfnkdnf");
-
-        anime({
-          targets : ".projectsexpand",
-          opacity : 0,
-          scale : 0,
-          translateX :"-50%",
-          translateY : "-50%",
-          duration : 50
-        })
-              setTimeout(function(){
-                projectcontainerexpand.style.transform ="scale(0)"
-        projectcontainerexpand.style.display = "none"
-        backcareer.style.opacity = "1";
-        backbutton.style.opacity = "1"
-        projectcontainerexpand.style.opacity = "0"
-      },500)
-
-}
-
-projectcontainerexpand.onclick=function (tar)
-{
-  console.log("fkwhf")
-  if(tar.target == tar.currentTarget)
-  {
-
-      anime({
-          targets : ".projectsexpand",
-          opacity : 0,
-          scale : 0,
-          translateX :"-50%",
-          translateY : "-50%",
-          duration : 50
-        })
+function backnew(){
+    anime({
+    targets :"#projectcontainer .projects",
+    scale : ["1","0.6"],
+    opacity : ["1","0"],
+    duration:50,
+    // delay : anime.stagger (50),
+   })
+    body.classList.remove("saavu2")
+    secondmain.classList.remove("saavu3")
       setTimeout(function(){
-                projectcontainerexpand.style.transform ="scale(0)"
-        projectcontainerexpand.style.display = "none"
-        backcareer.style.opacity = "1";
-        backbutton.style.opacity = "1"
-        projectcontainerexpand.style.opacity = "0"
-      },500)
-        // projectsexpand.style.zIndex = "1";
+    projectcontainer.style.display ="none";
+    na.style.top = "0%";
+    backbutton.style.display = "none"
+  },500)
+}
 
-  }
+
+totalprojects.addEventListener("click",overprojects)
+
+function overprojects()
+{
+  backbutton1.style.display = "flex"
+  overprojectcontainer.style.display ="flex"
+  // na.style.top = "-100%"
+  body.classList.add("saavu2")
+  secondmain.classList.add("saavu3")
+  anime({
+    targets :"#overprojectcontainer .projects",
+    scale : ["0.6","1"],
+    opacity : ["0","1"],
+    duration:100,
+    // easing : "linear",
+    // delay : anime.stagger (100),
+   })
+}
+
+overprojectcontainer.onclick = function(tar)
+
+{
+  if (tar.target == tar.currentTarget) 
+  {
+
+  anime({
+    targets :"#overprojectcontainer .projects",
+    scale : ["1","0.6"],
+    opacity : ["1","0"],
+    duration:50,
+    // delay : anime.stagger (50),
+   })
+    body.classList.remove("saavu2")
+    secondmain.classList.remove("saavu3")
+  setTimeout(function(){
+    overprojectcontainer.style.display ="none";
+    na.style.top = "0%"
+    backbutton1.style.display = "none"
+  },500)
+}
+}
+
+
+backbutton1.addEventListener("click",backnew1)
+
+function backnew1()
+{
+
+  anime({
+    targets :"#overprojectcontainer .projects",
+    scale : ["1","0.6"],
+    opacity : ["1","0"],
+    duration:50,
+    // delay : anime.stagger (50),
+   })
+    body.classList.remove("saavu2")
+    secondmain.classList.remove("saavu3")
+  setTimeout(function(){
+    overprojectcontainer.style.display ="none";
+    na.style.top = "0%"
+    backbutton1.style.display = "none"
+  },500)
 }
