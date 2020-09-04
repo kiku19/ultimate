@@ -201,7 +201,7 @@ justify-content: left;
   font-weight: bold;
 }
 
-    @media only screen and (max-width: 720px){
+    @media only screen and (max-width: 1000px){
     .projects
     {flex-direction: column;
       justify-content: center;}
