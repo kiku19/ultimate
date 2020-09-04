@@ -4,6 +4,7 @@
 
 body {
    background-color: white;
+   height: 100%;
 }
 .afterload{
    opacity :0;
@@ -102,7 +103,7 @@ div.circle1 {
 /*  transform: scale(1.5);
   filter: blur(3px);*/
   /*overflow-y: hidden;*/
-overflow-x: hidden;
+overflow: hidden;
 }
 #secondmain
 {
@@ -119,7 +120,7 @@ overflow-x: hidden;
   top: 77px;
   position:absolute;
   width: 100%;
-  height: auto;
+  height: calc(100vh - 77px);
   background-color: rgba(255,255,255,0);
   z-index: 11;
   transition: 0.6s;
@@ -127,7 +128,7 @@ overflow-x: hidden;
   align-items: center;
   display: none;
   flex-wrap: wrap;
-  overflow-y: scroll;
+  overflow: auto;
   opacity: 1;
   
   }
@@ -162,7 +163,7 @@ overflow-x: hidden;
   background-size: cover;
   transform-origin: center;
   transition: 0.2s;
-  background-image:url("./background4.jpg");
+/*  background-image:url("./background4.jpg");*/
 }
 .projecttitle
 {
@@ -278,7 +279,7 @@ justify-content: left;
   top: 77px;
   position:absolute;
   width: 100%;
-  height: auto;
+  height: calc(100vh - 77px);
   background-color: rgba(255,255,255,0);
   z-index: 11;
   transition: 0.6s;
@@ -287,7 +288,7 @@ justify-content: left;
   display: none;
   flex-wrap: wrap;
   opacity: 1;
-  overflow-y: scroll;
+  overflow: auto;
 }
 /*.completedprojects
 {

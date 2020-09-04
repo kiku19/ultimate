@@ -307,6 +307,8 @@ animate1.add({
 activeprojects.addEventListener("click",displayprojects);
 function displayprojects()
 {
+
+  window.scrollTo(0,0);
   backbutton.style.display = "flex"
   projectcontainer.style.display ="flex"
   // na.style.top = "-100%"
@@ -368,6 +370,7 @@ totalprojects.addEventListener("click",overprojects)
 
 function overprojects()
 {
+  window.scrollTo(0,0);
   backbutton1.style.display = "flex"
   overprojectcontainer.style.display ="flex"
   // na.style.top = "-100%"
@@ -426,4 +429,15 @@ function backnew1()
     na.style.top = "0%"
     backbutton1.style.display = "none"
   },500)
+}
+
+//insert image on active projects
+
+console.log(projectimage)
+var imageurl
+for (var g =0 ; g<projectimage.length ; g++)
+{
+  imageurl = "url('./background" + g + ".jpg')"
+  console.log(imageurl)
+  projectimage[g].style.backgroundImage = imageurl
 }
