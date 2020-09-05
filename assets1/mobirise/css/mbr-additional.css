@@ -1624,3 +1624,87 @@ section.lazy-placeholder:after {
 .cid-s9DX5ILUYt .media-container-row .row-copirayt p {
   width: 100%;
 }
+@media (max-width: 1124px) {
+  .cid-s7CJva1tdF .navbar-expand {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+  .cid-s7CJva1tdF img {
+    height: 3.8rem !important;
+  }
+  .cid-s7CJva1tdF .btn {
+    display: -webkit-flex;
+  }
+  .cid-s7CJva1tdF button.navbar-toggler {
+    display: block;
+  }
+  .cid-s7CJva1tdF .navbar-toggleable-sm {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+  .cid-s7CJva1tdF .navbar-collapse {
+    display: none !important;
+    padding-right: 0 !important;
+  }
+  .cid-s7CJva1tdF .navbar-collapse.collapsing,
+  .cid-s7CJva1tdF .navbar-collapse.show {
+    display: block !important;
+  }
+  .cid-s7CJva1tdF .navbar-collapse.collapsing .navbar-nav,
+  .cid-s7CJva1tdF .navbar-collapse.show .navbar-nav {
+    display: block;
+    text-align: center;
+  }
+  .cid-s7CJva1tdF .navbar-collapse.collapsing .navbar-nav .nav-item,
+  .cid-s7CJva1tdF .navbar-collapse.show .navbar-nav .nav-item {
+    clear: both;
+  }
+  .cid-s7CJva1tdF .navbar-collapse.collapsing .navbar-buttons,
+  .cid-s7CJva1tdF .navbar-collapse.show .navbar-buttons {
+    text-align: center;
+  }
+  .cid-s7CJva1tdF .navbar-collapse.collapsing .navbar-buttons:last-child,
+  .cid-s7CJva1tdF .navbar-collapse.show .navbar-buttons:last-child {
+    margin-bottom: 1rem;
+  }
+  .cid-s7CJva1tdF .dropdown .dropdown-menu {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    overflow: hidden;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    padding: 0;
+    transition-duration: .5s;
+    transition-property: opacity,padding,height;
+  }
+  .cid-s7CJva1tdF .dropdown.open > .dropdown-menu {
+    position: relative;
+    opacity: 1;
+    height: auto;
+    padding: 1.4rem 0;
+    visibility: visible;
+  }
+  .cid-s7CJva1tdF .dropdown .dropdown-submenu {
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .cid-s7CJva1tdF .dropdown .dropdown-toggle[data-toggle="dropdown-submenu"]::after {
+    margin-top: 0;
+    position: inherit;
+    right: 0;
+    top: 50%;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .3em;
+    vertical-align: middle;
+    content: "";
+    border-top: .30em solid;
+    border-right: .30em solid transparent;
+    border-left: .30em solid transparent;
+  }
+}
