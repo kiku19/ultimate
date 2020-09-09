@@ -18,7 +18,7 @@ body {
 }
 .display-2 {
   font-family: 'Rubik', sans-serif;
-  font-size: 2.2rem;
+  font-size: 3rem;
   font-display: swap;
 }
 .display-2 > .mbr-iconfont {
@@ -12972,7 +12972,7 @@ section.lazy-placeholder:after {
 .cid-s7CJva1tdF #brandlogomain {
   margin-left: 1rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .cid-s7CJva1tdF #logonavbar123 {
     position: absolute;
     top: 0.2rem;
