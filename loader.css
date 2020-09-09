@@ -5,6 +5,7 @@
 body {
    background-color: white;
    height: 100%;
+   overflow-x: hidden;
 }
 .afterload{
    opacity :0;
@@ -30,7 +31,7 @@ div.circles {
     display: flex;
     /* flex-wrap: wrap; */
     width: 54px;
-    top: 7px;
+    top: -13px;
   left: 6px
 }
 
@@ -63,6 +64,7 @@ div.circle1 {
 {
    width: 70px;
    height: 70px;
+   transform: scale(1.3);
 }
 
 #svg
@@ -112,7 +114,9 @@ overflow: hidden;
 .saavu3
 {
     transform: scale(1.5);
-  filter: blur(3px);
+/*  filter: blur(2px);
+  filter: webkit-blur(2px)*/
+  opacity: 0.5;
 }
 /*projects*/
 #projectcontainer
@@ -274,7 +278,7 @@ justify-content: left;
     transform: translate(-50%, -50%);
 }
 
-#overprojectcontainer
+/*#overprojectcontainer
 {
   top: 77px;
   position:absolute;
@@ -289,7 +293,7 @@ justify-content: left;
   flex-wrap: wrap;
   opacity: 1;
   overflow: auto;
-}
+}*/
 /*.completedprojects
 {
   position: relative;
@@ -641,4 +645,198 @@ justify-content: left;
 {
   color: black;
   cursor: pointer;
+}
+
+
+
+
+
+.topcontainer
+{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  top: 0px;
+  justify-content: center;
+  transition: 1s;
+}
+#cont
+{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0px;
+  transition: 1s;
+  width: 100%;
+  height: auto;
+}
+.cid-s68MKjDkO7 #cardsleftalign {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    transition: 1s;
+}
+#imagec{
+    position: relative;
+    width: 100%;
+  /*  background-color: #e4e1e1;*/
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    transition: 1s;
+    flex-wrap: wrap;
+    justify-content: center;
+  /*  flex-direction: column;*/
+
+}
+#cardsleftalign
+{
+  position: relative !important;
+  padding-left: 0px;
+  height: 60%;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  transition: 1s;
+}
+
+#imagec2
+{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  transition: 1s;
+  left: -40px;
+  border-radius: 15px;
+  opacity: 1;
+  /*border:3px solid ;*/
+  transform-origin: center;
+  text-align: center;
+  overflow: hidden;
+  transform: scale(0.8);
+/*  background-image: url("./india5000.png");*/
+  background-color: white;
+}
+
+#imagec2 img
+{
+  position: relative;
+  top:50%;
+  transition: 1s;
+  transform: scale(1) translateY(-50%);
+  max-width: 100%;
+  height: auto;
+  opacity: 1;
+  transform-origin: center;
+}
+
+.content2
+{
+  opacity: 1;
+  position: relative;
+  background-color:#e4e1e1;
+  transition: 1s;
+  width: 50%;
+  height:auto;
+  z-index: 1;
+  border-radius: 5px;
+  text-align: left;
+/*  border:1px solid black;*/
+  justify-content: center;
+  padding: 10px;
+
+}
+.content2 .award
+{
+  position: absolute;
+  padding-top:5px;
+  color: #f47a27;
+  transition: 1s;
+  font-size: 25px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: 400;
+  word-break: 
+  display: none;
+  letter-spacing: 1px;
+  font-family: Timesnewroman;
+}
+.letter
+{
+  display: inline-block;
+}
+.content2 .para
+{
+  position: relative;
+  font-family: Calibri;
+  transition: 1s;
+/*  margin: 10px;*/
+  font-size: 18px;
+  display: none;
+  padding-top: 50px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width:1200px)
+{
+    #cont
+    {
+      flex-direction: row;
+    }
+    #imagec
+    {
+      width: 100%;
+      flex-direction: row;
+/*      height: auto;*/
+    }   
+    #imagec2
+    {
+      width: 100%;
+      height: auto;
+      left: 0px;
+      padding-bottom: 20px;
+      transform: scale(0.8);
+    } 
+    .content2
+    {
+      width: 100%;
+      height: auto;
+    }
+    #cont3
+    {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .cardsleftalign
+    {
+        padding-left: 100px !important;
+    }
+}
+
+/*.media-container-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: start;
+}*/
+
+#cont3
+{
+  display: flex;
+  margin: 0px !important;
+  padding: 0px !important;
+  transition: 1s;
+      left: 50%;
+    transform: translateX(-50%);
+        top: 15px;
+}
+
+#activeprojects,#totalprojects,#manpower,#servicehistory
+{
+  width: 700px;
+/*  left: 100px;*/
 }

@@ -87,6 +87,7 @@ if(ismobile)
   {
     apply1[p].style.display = "none";
     apply2[p].style.display = "inline";
+    console.log("mobile")
   }
 }
 
@@ -96,5 +97,6 @@ else
   {
     apply2[p].style.display = "none";
     apply1[p].style.display = "inline";
+    console.log("window")
   }
 }
