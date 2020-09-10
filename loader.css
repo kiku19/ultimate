@@ -682,7 +682,7 @@ justify-content: left;
     position: relative;
     width: 100%;
   /*  background-color: #e4e1e1;*/
-    height: auto;
+    height: 380px;
     overflow: hidden;
     display: flex;
     padding: 5px;
@@ -791,9 +791,9 @@ justify-content: left;
     }
     #imagec
     {
-      width: 100%;
-      flex-direction: row;
-/*      height: auto;*/
+    width: 100%;
+    flex-direction: row;
+    height: 357px;
     }   
     #imagec2
     {
@@ -866,6 +866,10 @@ justify-content: left;
 {
  /* transform: scale(1.8) translateY(25%);*/
  /*top: 15%;*/
+}
+#imagec
+{
+  height: 266px;
 }
 .content2 .award
 {
