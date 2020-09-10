@@ -461,7 +461,7 @@ for (var g =0 ; g<projectimage.length ; g++)
 
 
 var imagec3 = document.getElementById("imagec3");
-var i =1;
+var i =0;
 var imgurl ;
 imagec3.src = "./india50000.png"
 var para1 = ["Winner of INDIA 5000 Best MSME Awards for quality excellence with privilege this has been awarded to MASTEK ENGINEERING Pvt.ltd in 2018 for outstanding contribution in quality and excellence, in realm of customer satisfication, impact on society through service and management to boost up all.","MASTEK ENGINEERING has been audited and confirmed to ISO 9001:2015 for the following activities Civil, Mechanical and Electrical Construction works for industries including Oil and Gas fields. This can verified by using Certificate number 733014","National Small industries Corporation limited has certified MASTEK ENGINEERING to foster the growth of MSME businesses, which provides single point registration thus able to claim 25% minimum annual purchase made by central ministries."]
