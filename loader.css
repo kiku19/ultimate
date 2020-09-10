@@ -685,7 +685,7 @@ justify-content: left;
     height: auto;
     overflow: hidden;
     display: flex;
-    padding: 20px;
+    padding: 5px;
     transition: 1s;
     flex-wrap: wrap;
     justify-content: center;
@@ -709,14 +709,14 @@ justify-content: left;
   width: 50%;
   height: 100%;
   transition: 1s;
-  left: -40px;
+/*  left: -40px;*/
   border-radius: 15px;
   opacity: 1;
   /*border:3px solid ;*/
   transform-origin: center;
   text-align: center;
   overflow: hidden;
-  transform: scale(0.8);
+/*  transform: scale(0.8);*/
 /*  background-image: url("./india5000.png");*/
   background-color: #ffffff88;
 }
@@ -724,9 +724,9 @@ justify-content: left;
 #imagec2 img
 {
   position: relative;
-  top:45%;
+  top:50%;
   transition: 1s;
-  transform: scale(1) translateY(-50%);
+  transform: translateY(-50%);
   max-width: 100%;
   height: auto;
   opacity: 1;
@@ -747,7 +747,7 @@ justify-content: left;
   text-align: left;
 /*  border:1px solid black;*/
   justify-content: center;
-  padding: 10px;
+  padding: 3px;
 
 }
 .content2 .award
@@ -778,7 +778,7 @@ justify-content: left;
   font-size: 18px;
   display: none;
   padding-top: 50px;
-  margin-left: 10px;
+/*  margin-left: 3px;*/
 }
 
 @media only screen and (max-width:1200px)
@@ -795,16 +795,22 @@ justify-content: left;
     }   
     #imagec2
     {
-      width: 50%;
+      width: 40%;
       height: auto;
-      left: -40px;
-      padding-bottom: 20px;
-      transform: scale(0.8);
-    } 
+     /* left: -40px;*/
+      /*padding-bottom: 20px;*/
+      /*transform: scale(1);*/
+    }
+    #imagec2 img
+    {
+      transform: scale(1.4);
+      top: 5%;
+    }
     .content2
     {
-      width: 50%;
+      width: 60%;
       height: auto;
+      font-size: 12px;
     }
     #cont3
     {
@@ -851,4 +857,20 @@ justify-content: left;
 {
   opacity: 0;
   transition: 1s;
+}
+@media only screen and (max-width:380px)
+{
+#imagec2 img
+{
+ /* transform: scale(1.8) translateY(25%);*/
+ top: 15%;
+}
+.content2 .award
+{
+  font-size: 20px;
+}
+.content2 .para
+{
+  font-size: 12px;
+}
 }
