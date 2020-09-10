@@ -496,6 +496,7 @@ loop = async() =>{
     },"-=1000")
    textanimate.add({
     targets : imagec3,
+    left : "100%",
     opacity : [1,0],
     duration :1000,
     easing : "linear"
