@@ -474,7 +474,7 @@ award[0].style.display = "block"
 loop = async() =>{
   for(;i<3;i++)
   {
-  await new Promise(resolve => setTimeout(resolve,7000))
+  await new Promise(resolve => setTimeout(resolve,10000))
   // para[0].innerHTML = para1[i];
   award[0].innerHTML = award1[i];
   // para[0].innerHTML = para[0].textContent.replace(/\S/g,'<span class="letter">$&</span>');
@@ -513,6 +513,7 @@ loop = async() =>{
   })
   if(i==2){i=-1}
    }
+  removeAllChildNodes(imagec2);
 }
 
 loop();
