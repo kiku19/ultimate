@@ -486,6 +486,14 @@ loop = async() =>{
   console.log(imgurl);
   var textanimate = anime.timeline({loop:false})
   textanimate.add({
+    targets : imagec3,
+    opacity : [0,1],
+    // translateY : "-50%",
+    // scale : [1,1.3],
+    duration :500,
+    easing : "linear"
+  })
+  textanimate.add({
   targets:'.para .letter,.award .letter',
   scale:[1.5,1],
   opacity:[0,1],
@@ -494,7 +502,9 @@ loop = async() =>{
   easing:"easeOutExpo",
   delay:(elem, index) => index*20
     })
-  textanimate.add({
+  if(i==2){i=-1}
+   }
+   textanimate.add({
     targets : imagec3,
     opacity : [1,0],
     // translateY : "-50%",
@@ -502,8 +512,6 @@ loop = async() =>{
     duration :500,
     easing : "linear"
   })
-  if(i==2){i=-1}
-   }
 }
 
 loop();
