@@ -803,7 +803,7 @@ justify-content: left;
     }
     #imagec2 img
     {
-      transform: scale(1.4);
+      transform: scale(1.2);
       top: 5%;
     }
     .content2
@@ -858,12 +858,12 @@ justify-content: left;
   opacity: 0;
   transition: 1s;
 }
-@media only screen and (max-width:380px)
+@media only screen and (max-width:500px)
 {
 #imagec2 img
 {
  /* transform: scale(1.8) translateY(25%);*/
- top: 15%;
+ /*top: 15%;*/
 }
 .content2 .award
 {
