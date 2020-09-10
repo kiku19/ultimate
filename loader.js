@@ -460,7 +460,6 @@ for (var g =0 ; g<projectimage.length ; g++)
 //carousel
 
 
-var imagec3 = document.getElementById("imagec3");
 var i =1;
 var imgurl ;
 imagec3.src = "./india50000.png"
@@ -481,19 +480,11 @@ loop = async() =>{
   award[0].innerHTML = award[0].textContent.replace(/\S/g,'<span class="letter">$&</span>');
   removeAllChildNodes(para[0]);
   add1(i);
-  imgurl = "./india5000"+i+".png";
-  imagec3.src = imgurl;
-  console.log(imgurl);
+  removeimage(imagec3);
+  add2(i);
+  // imgurl = "./india5000"+i+".png";
+  // imagec3.src = imgurl;
   var textanimate = anime.timeline({loop:false})
-  textanimate.add({
-    targets : imagec3,
-    opacity : [0,1],
-    translateX : ["50%",0],
-    translateY : "-50%",
-    // scale : [1,1.3],
-    duration :1000,
-    easing : "linear"
-  })
   textanimate.add({
   targets:'.para .letter,.award .letter',
   scale:[1.5,1],
@@ -505,15 +496,13 @@ loop = async() =>{
     },"-=1000")
    textanimate.add({
     targets : imagec3,
-    translateX : ["0%","50%"],
-    translateY : "-50%",
     opacity : [1,0],
     duration :1000,
     easing : "linear"
   })
   if(i==2){i=-1}
    }
-  removeAllChildNodes(imagec2);
+  removeimage(imagec3);
 }
 
 loop();
@@ -535,4 +524,17 @@ function removeAllChildNodes(parent) {
     while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
     }
+}
+
+function add2(k)
+{
+  var imagec3 = document.createElement("img");
+  imagec3.setAttribute("id","imagec3");
+  imgurl = "./india5000"+k+".png";
+  imagec3.src = imgurl;
+  imagec2.appendChild(imagec3);
+}
+function removeimage()
+{
+  imagec3.remove();
 }
