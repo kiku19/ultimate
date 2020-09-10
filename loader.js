@@ -474,15 +474,15 @@ award[0].style.display = "block"
 loop = async() =>{
   for(;i<3;i++)
   {
-  await new Promise(resolve => setTimeout(resolve,10000))
+  imgurl = "./india5000"+i+".png";
+  imagec3.src = imgurl;
+  await new Promise(resolve => setTimeout(resolve,7000))
   // para[0].innerHTML = para1[i];
   award[0].innerHTML = award1[i];
   // para[0].innerHTML = para[0].textContent.replace(/\S/g,'<span class="letter">$&</span>');
   award[0].innerHTML = award[0].textContent.replace(/\S/g,'<span class="letter">$&</span>');
   removeAllChildNodes(para[0]);
   add1(i);
-  imgurl = "./india5000"+i+".png";
-  imagec3.src = imgurl;
   console.log(imgurl);
   var textanimate = anime.timeline({loop:false})
   textanimate.add({
