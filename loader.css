@@ -762,7 +762,7 @@ justify-content: left;
   font-weight: 400;
   word-break: 
   display: none;
-  opacity: 0;
+  opacity: 1;
   letter-spacing: 1px;
   font-family: Timesnewroman;
 }
@@ -777,7 +777,7 @@ justify-content: left;
   transition: 1s;
 /*  margin: 10px;*/
   font-size: 18px;
-  opacity: 0;
+  opacity: 1;
   display: none;
   padding-top: 50px;
 /*  margin-left: 3px;*/
@@ -805,8 +805,8 @@ justify-content: left;
     }
     #imagec2 img
     {
-      transform: scale(1.2);
-      top: 5%;
+   /*   transform: scale(1.2);*/
+     /* top: 5%;*/
     }
     .content2
     {

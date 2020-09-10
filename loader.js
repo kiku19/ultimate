@@ -488,9 +488,10 @@ loop = async() =>{
   textanimate.add({
     targets : imagec3,
     opacity : [0,1],
-    // translateY : "-50%",
+    translateX : ["50%",0],
+    translateY : "-50%",
     // scale : [1,1.3],
-    duration :500,
+    duration :1000,
     easing : "linear"
   })
   textanimate.add({
@@ -501,17 +502,17 @@ loop = async() =>{
   duration:1000,
   easing:"easeOutExpo",
   delay:(elem, index) => index*20
-    })
-  if(i==2){i=-1}
-   }
+    },"-=1000")
    textanimate.add({
     targets : imagec3,
+    translateX : ["0%","50%"],
+    translateY : "-50%",
     opacity : [1,0],
-    // translateY : "-50%",
-    // scale : [1,1.3],
-    duration :500,
+    duration :1000,
     easing : "linear"
-  })
+  },"+=900")
+  if(i==2){i=-1}
+   }
 }
 
 loop();
