@@ -510,7 +510,7 @@ loop = async() =>{
     opacity : [1,0],
     duration :1000,
     easing : "linear"
-  },"+=900")
+  })
   if(i==2){i=-1}
    }
 }
