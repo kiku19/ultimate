@@ -685,6 +685,7 @@ justify-content: left;
     height: auto;
     overflow: hidden;
     display: flex;
+    padding: 20px;
     transition: 1s;
     flex-wrap: wrap;
     justify-content: center;
@@ -717,13 +718,13 @@ justify-content: left;
   overflow: hidden;
   transform: scale(0.8);
 /*  background-image: url("./india5000.png");*/
-  background-color: white;
+  background-color: #ffffff88;
 }
 
 #imagec2 img
 {
   position: relative;
-  top:50%;
+  top:45%;
   transition: 1s;
   transform: scale(1) translateY(-50%);
   max-width: 100%;
@@ -736,7 +737,8 @@ justify-content: left;
 {
   opacity: 1;
   position: relative;
-  background-color:#e4e1e1;
+  background-color:#ff7b20a1;
+  color: white;
   transition: 1s;
   width: 50%;
   height:auto;
@@ -752,7 +754,7 @@ justify-content: left;
 {
   position: absolute;
   padding-top:5px;
-  color: #f47a27;
+  color: black;
   transition: 1s;
   font-size: 25px;
   width: 100%;
@@ -793,15 +795,15 @@ justify-content: left;
     }   
     #imagec2
     {
-      width: 100%;
+      width: 50%;
       height: auto;
-      left: 0px;
+      left: -40px;
       padding-bottom: 20px;
       transform: scale(0.8);
     } 
     .content2
     {
-      width: 100%;
+      width: 50%;
       height: auto;
     }
     #cont3
@@ -839,4 +841,14 @@ justify-content: left;
 {
   width: 700px;
 /*  left: 100px;*/
+}
+.word
+{
+  display: inline-block;
+  margin-left: 3px;
+}
+#imagec3
+{
+  opacity: 0;
+  transition: 1s;
 }

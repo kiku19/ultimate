@@ -458,28 +458,32 @@ for (var g =0 ; g<projectimage.length ; g++)
 
 
 //carousel
+
+
 var imagec3 = document.getElementById("imagec3");
-  var i =1;
-  var imgurl ;
-  imagec3.src = "./india50000.png"
+var i =1;
+var imgurl ;
+imagec3.src = "./india50000.png"
 var para1 = ["Winner of INDIA 5000 Best MSME Awards for quality excellence with privilege this has been awarded to MASTEK ENGINEERING Pvt.ltd in 2018 for outstanding contribution in quality and excellence, in realm of customer satisfication, impact on society through service and management to boost up all.","MASTEK ENGINEERING has been audited and confirmed to ISO 9001:2015 for the following activities Civil, Mechanical and Electrical Construction works for industries including Oil and Gas fields. This can verified by using Certificate number 733014","National Small industries Corporation limited has certified MASTEK ENGINEERING to foster the growth of MSME businesses, which provides single point registration thus able to claim 25% minimum annual purchase made by central ministries."]
 var award1= ["INDIA 5000","ISO Certified","NSIC Certified"]
-  award[0].innerHTML = award1[0];
+award[0].innerHTML = award1[0];
 para[0].innerHTML = para1[0]
-  para[0].style.display = "block"
-  award[0].style.display = "block"
+para[0].style.display = "block"
+award[0].style.display = "block"
 
- loop = async() =>{
+loop = async() =>{
   for(;i<3;i++)
   {
-    await new Promise(resolve => setTimeout(resolve,7000))
-  para[0].innerHTML = para1[i];
+  await new Promise(resolve => setTimeout(resolve,7000))
+  // para[0].innerHTML = para1[i];
   award[0].innerHTML = award1[i];
-  para[0].innerHTML = para[0].textContent.replace(/\S/g,'<span class="letter">$&</span>');
+  // para[0].innerHTML = para[0].textContent.replace(/\S/g,'<span class="letter">$&</span>');
   award[0].innerHTML = award[0].textContent.replace(/\S/g,'<span class="letter">$&</span>');
-  imgurl = "./india5000"+i+".png"
-  imagec3.src = imgurl
-  console.log(imgurl)
+  removeAllChildNodes(para[0]);
+  add1(i);
+  imgurl = "./india5000"+i+".png";
+  imagec3.src = imgurl;
+  console.log(imgurl);
   var textanimate = anime.timeline({loop:false})
   textanimate.add({
   targets:'.para .letter,.award .letter',
@@ -490,29 +494,35 @@ para[0].innerHTML = para1[0]
   easing:"easeOutExpo",
   delay:(elem, index) => index*20
     })
+  textanimate.add({
+    targets : imagec3,
+    opacity : [1,0],
+    // translateY : "-50%",
+    // scale : [1,1.3],
+    duration :500,
+    easing : "linear"
+  })
   if(i==2){i=-1}
    }
 }
 
 loop();
-// para[0].innerHTML = para1[0]
-// para[0].innerHTML = para[0].textContent.replace(/\S/g,'<span class="letter">$&</span>');
-// para[0].style.display = "block"
-// award[1].style.display = "block"
-// var textanimate = anime.timeline({loop:true})
-// textanimate.add({
-//   targets:'.para .letter',
-//   scale:[3,1],
-//   opacity:[0,1],
-//   translateZ:0,
-//   duration:1000,
-//   easing:"easeOutExpo",
-//   delay:(elem, index) => index*20
-// })
-// textanimate.add({
-//   targets:'.para',
-//   opacity:0,
-//   duration:1000,
-//   delay:1000,
-//   easing:"easeOutExpo",
-// })
+
+//check
+function add1(k)
+{
+    var s ;
+    s= para1[k].split(" ");
+    for(var i=0 ; i<s.length ; i++)
+    {
+      var div = document.createElement("div")
+      div.classList.add("word");
+      div.innerHTML = s[i].replace(/\S/g,'<span class="letter">$&</span>');
+      para[0].appendChild(div);
+    }  
+}
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
