@@ -729,7 +729,7 @@ blockquote {
   }
 }
 
-@media (min-width: 1125px) {
+@media (min-width: 1200px) {
   .menu .navbar-nav.nav-dropdown {
     display: -webkit-flex;
   }
