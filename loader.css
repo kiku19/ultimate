@@ -681,8 +681,9 @@ justify-content: left;
 #imagec{
     position: relative;
     width: 100%;
+/*    top: 18px;*/
   /*  background-color: #e4e1e1;*/
-    height: 380px;
+    height: 409px;
     overflow: hidden;
     display: flex;
     padding: 5px;
@@ -920,3 +921,46 @@ justify-content: left;
       text-align: center !important;
     }
 }
+
+.cid-s7DGymanhL {
+    background-color: #fca56c !important;
+}
+
+.display-5 {
+    font-family: Timesnewroman !important;
+    color: white;
+    }
+
+.display-7 {
+    font-family: Calibri !important;
+    margin-left: 10px;
+    text-align: justify;
+/*    color: saddlebrown;*/
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    }
+
+.cid-s7DGymanhL .progress-primary {
+    background: white !important;
+}
+
+ #cardsleftalign
+    {
+        padding-left: 0px !important;
+        width: 100%;
+    }
+    .card-img
+    {
+      justify-content: center;
+    }
+    .card-text
+    {
+      text-align: center;
+    }
+    .cid-s68MKjDkO7 H4 {
+      text-align: center !important;
+    }
+    .mbr-content-text
+    {
+      text-align: center !important;
+    }
