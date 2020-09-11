@@ -12165,7 +12165,7 @@ section.lazy-placeholder:after {
   background-color: #ffffff;
 }
 .cid-s7c8Neabjo .mbr-section-subtitle {
-  color: #d18e8e;
+  color: #f6a36a;
 }
 .cid-s7c8Neabjo H2 {
   color: #073b4c;
@@ -12868,7 +12868,7 @@ section.lazy-placeholder:after {
   border-right: .30em solid transparent;
   border-left: .30em solid transparent;
 }
-@media (max-width: 1124px) {
+@media (max-width: 1200px) {
   .cid-s7CJva1tdF .navbar-expand {
     flex-direction: column;
     -webkit-flex-direction: column;
