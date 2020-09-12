@@ -114,8 +114,8 @@ overflow: hidden;
 .saavu3
 {
     transform: scale(1.5);
-  filter: blur(2px);
-  filter: webkit-blur(2px)
+  /*filter: blur(2px);
+  filter: webkit-blur(2px);*/
   opacity: 0.5;
 }
 /*projects*/
