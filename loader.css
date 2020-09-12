@@ -292,7 +292,9 @@ justify-content: left;
 .projectstopics:hover
 {
   cursor: pointer;
-  transform: scale(0.95);
+  transform: scale(1.05);
+  background-color: white;
+  border-radius: 50px;
 }
 
 #careercontainer
@@ -671,7 +673,7 @@ justify-content: left;
 }
 
 .cid-s7DGymanhL {
-    background-color: #fca56c !important;
+   /* background-color: #fca56c !important;*/
 }
 
 .display-5 {
