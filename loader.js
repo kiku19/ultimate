@@ -458,10 +458,10 @@ for (var g =0 ; g<projectimage.length ; g++)
 
 
 //carousel
-var i =0;
+var i =1;
 var imgurl = ["./india50000.png","./india50001.png","./india50002.png"] ;
 imagec3.src = imgurl[0];
-var para1 = ["Winner of INDIA 5000 Best MSME Awards for quality excellence with privilege this has been awarded to MASTEK ENGINEERING Pvt.ltd in 2018 for outstanding contribution in quality and excellence, in realm of customer satisfication, impact on society through service and management to boost up all.","MASTEK ENGINEERING has been audited and confirmed to ISO 9001:2015 for the following activities Civil, Mechanical and Electrical Construction works for industries including Oil and Gas fields. This can verified by using Certificate number 733014.","National Small industries Corporation limited has certified MASTEK ENGINEERING to foster the growth of MSME businesses, which provides single point registration thus able to claim 25% minimum annual purchase made by central ministries."]
+var para1 = ["Winner of INDIA 5000 Best MSME Awards for quality excellence with privilege this has been awarded to MASTEK ENGINEERING Pvt.ltd in 2018 for outstanding contribution in quality and excellence.","MASTEK ENGINEERING has been audited and confirmed to ISO 9001:2015 for the following activities Civil, Mechanical and Electrical Construction works for industries including Oil and Gas fields. This can verified by using Certificate number 733014.","National Small industries Corporation limited has certified MASTEK ENGINEERING to foster the growth of MSME businesses, which provides single point registration thus able to claim 25% minimum annual purchase made by central ministries."]
 var award1= ["INDIA 5000","ISO Certified","NSIC Certified"]
 award[0].innerHTML = award1[0];
 para[0].innerHTML = para1[0]

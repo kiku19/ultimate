@@ -498,7 +498,7 @@ justify-content: left;
   text-align: left;
 /*  border:1px solid black;*/
   justify-content: center;
-  padding: 3px;
+  padding: 0px 20px;
 
 }
 .content2 .award
@@ -684,7 +684,7 @@ justify-content: left;
 .display-7 {
     font-family: Calibri !important;
     margin-left: 10px;
-    text-align: center;
+  /*  text-align: center;*/
 /*    color: saddlebrown;*/
     font-size: 18px !important;
     font-weight: 500 !important;
