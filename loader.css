@@ -293,8 +293,8 @@ justify-content: left;
 {
   cursor: pointer;
   transform: scale(1.05);
-  background-color: white;
-  border-radius: 50px;
+/*  background-color: white;
+  border-radius: 50px;*/
 }
 
 #careercontainer
