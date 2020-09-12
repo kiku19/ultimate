@@ -471,7 +471,7 @@ award[0].style.display = "block"
 loop = async() =>{
   for(;i<3;i++)
   {
-  await new Promise(resolve => setTimeout(resolve,7000))
+  await new Promise(resolve => setTimeout(resolve,8000))
   // para[0].innerHTML = para1[i];
   award[0].innerHTML = award1[i];
   // para[0].innerHTML = para[0].textContent.replace(/\S/g,'<span class="letter">$&</span>');
@@ -483,6 +483,13 @@ loop = async() =>{
   // imgurl = "./india5000"+i+".png";
   // imagec3.src = imgurl;
   var textanimate = anime.timeline({loop:false})
+  textanimate.add({
+    targets : imagec3,
+    left : ["50%","0%"],
+    opacity : [0,1],
+    duration :500,
+    easing : "linear"
+  })
   textanimate.add({
   targets:'.para .letter,.award .letter',
   scale:[1.5,1],
@@ -498,7 +505,7 @@ loop = async() =>{
     opacity : [1,0],
     duration :500,
     easing : "linear"
-  },"+=1500")
+  },"+=1800")
   if(i==2){i=-1}
    }
   removeimage(imagec3);
