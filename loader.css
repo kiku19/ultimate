@@ -114,8 +114,8 @@ overflow: hidden;
 .saavu3
 {
     transform: scale(1.5);
-  /*filter: blur(2px);
-  filter: webkit-blur(2px);*/
+/*  filter: blur(2px);
+  filter: webkit-blur(2px)*/
   opacity: 0.5;
 }
 /*projects*/
@@ -431,7 +431,7 @@ justify-content: left;
     width: 100%;
 /*    top: 18px;*/
   /*  background-color: #e4e1e1;*/
-    height: 416px;
+    height: 418px;
     overflow: hidden;
     display: flex;
     padding: 5px;
