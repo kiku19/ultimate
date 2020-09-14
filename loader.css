@@ -723,3 +723,8 @@ justify-content: left;
     {
       text-align: center !important;
     }
+
+    .wrapper
+    {
+      justify-content: center !important; 
+    }
